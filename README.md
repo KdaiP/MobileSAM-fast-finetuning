@@ -43,10 +43,19 @@ Training setting (such as batch_size) could be modified in `./configs/mobileSAM.
 
 To use the finetuned MobileSAM model, simply replace the original MobileSAM checkpoint with the newly finetuned one. No additional configuration needed for a seamless transition!
 
+## To do
+
+- [ ] Resume checkpoint training from the last finetuned checkpoint
+
+
 ## References
 
 [MobileSAM](https://github.com/ChaoningZhang/MobileSAM)
+
 [Medical-SAM-Adapter](https://github.com/WuJunde/Medical-SAM-Adapter)
+
 [SAM-Adapter-PyTorch](https://github.com/tianrun-chen/SAM-Adapter-PyTorch)
+
 [MedSAM](https://github.com/bowang-lab/MedSAM)
+
 [lightning-sam](https://github.com/luca-medeiros/lightning-sam)
