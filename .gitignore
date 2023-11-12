@@ -4,7 +4,6 @@
 __py
 **/__pycache__/
 
-datasets
 logs
 runs
 images

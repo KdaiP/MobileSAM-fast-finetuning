@@ -28,8 +28,13 @@ pip install -r requirements.txt
 
 ### Preparing the Data
 
-- **Training Data**: Place your training images (JPEG format) and corresponding masks (PNG format, same name as the images) in the `./datasets/train` directory.
-- **Validation Data**: Place your validation images (JPEG format) and masks (PNG format, same name as the images) in the `./datasets/val` directory.
+- **Training Data**: Place your training images (JPG format) and corresponding masks (PNG format, same name as the images) in the `./datasets/train` directory.
+
+<p float="center">
+  <img src="assets/dataset_example.png?raw=true" width="70%" />
+</p>
+
+- **Validation Data**: Place your validation images (JPG format) and masks (PNG format, same name as the images) in the `./datasets/val` directory.
 
 ### Running the Training Script
 
@@ -37,7 +42,7 @@ Run `train.py`
 
 By default, the checkpoint will be saved at  `./logs/`
 
-Training setting (such as batch_size) could be modified in `./configs/mobileSAM.json`
+To customize your training settings, such as batch_size, you can modify the configuration file located at `./configs/mobileSAM.json`. Please note that for users of PyTorch versions earlier than 2.1, enabling `bf16=true` in the configuration may result in errors.
 
 ## Inference
 
