@@ -1,0 +1,5 @@
+pytorch
+tensorboard
+packaging
+timm
+tqdm

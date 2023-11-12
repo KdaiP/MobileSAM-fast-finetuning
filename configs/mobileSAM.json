@@ -1,0 +1,34 @@
+{
+    "dataset":{
+        "train_dataset":"./datasets/train" ,
+        "val_dataset":"./datasets/val" ,
+        "max_bbox_shift": 20,
+        "num_workers":4
+    },
+    "model":{
+        "checkpoint_path":"./weights/mobile_sam.pt",
+        "type":"vit_t",
+        "image_size": 1024,
+        "save_path":"./logs"
+    },
+    "train": {
+        "epochs": 10000,
+        "learning_rate": 1e-5,
+        "batch_size": 4,
+        "val_freq": 5,
+        "gradient_accumulation": 1,
+        "bf16": false,
+        "warmup_step": 250,
+        "resume": false
+    },
+    "visual":{
+        "status": true,
+        "save_path": "./images",
+        "IOU_threshold": 0.5
+    },
+    "freeze":{
+        "freeze_image_encoder": true,
+        "freeze_prompt_encoder": true,
+        "freeze_mask_decoder": false
+    }
+}
